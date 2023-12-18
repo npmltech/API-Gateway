@@ -35,9 +35,9 @@ Quem fica responsável por realizar a rastreabilidade dos microsserviços será 
 
 - Para utilizar o **Zipkin**, basta executar o docker que se encontra na pasta **zipkin-docker**;
 - Para acessar o **Zipkin**, o endereço é: http://localhost:9411/zipkin;
-- Na busca, indique o nome dos serviços: CLIENTE_SERVICE e ALUNO_SERVICE.
+- Na busca, indique o nome do serviço: API_GATEWAY.
 
-Imagens com a monitoração dos microsserviços usando **Zipkin**:
+Imagens com a monitoração do api-gateway usando **Zipkin**:
 
 ![zipkin-01.png](zipkin-imagens/zipkin-01.png)
 
