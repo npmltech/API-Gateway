@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "75c63381-be2b-4028-ade3-548340516920",
+		"name": "API-Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5000052"
+	},
+	"item": [
+		{
+			"name": "SERVICO_ALUNO",
+			"item": [
+				{
+					"name": "get_api_aluno_actuator_health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9090/api/aluno/actuator/health"
+					},
+					"response": []
+				},
+				{
+					"name": "get_api_aluno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9090/api/aluno"
+					},
+					"response": []
+				},
+				{
+					"name": "get_aluno_by_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9090/api/aluno/6"
+					},
+					"response": []
+				},
+				{
+					"name": "post_api_aluno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeAluno\": \"INSERT ALUNO - Maria Maria 2\",\n    \"numMatricula\": 123,\n    \"numSalaAula\": 123,\n    \"ativo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9090/api/aluno"
+					},
+					"response": []
+				},
+				{
+					"name": "del_api_aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeAluno\": \"Maria Maria 2\",\n    \"numMatricula\": 123,\n    \"numSalaAula\": 123,\n    \"ativo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9090/api/aluno/2"
+					},
+					"response": []
+				},
+				{
+					"name": "update_aluno",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeAluno\": \"NOVO CLIENTE - Ricardo Oliveira Rocha Lima Souza\",\n    \"numMatricula\": 345,\n    \"numSalaAula\": 345,\n    \"ativo\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9090/api/aluno/6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SERVICO_CLIENTE",
+			"item": [
+				{
+					"name": "get_api_cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9090/api/cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "get_api_cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:9090/api/cliente/1"
+					},
+					"response": []
+				},
+				{
+					"name": "post_api_cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"INSERT CLIENTE - Carlos Eduardo\",\n    \"numeroDocumento\": 123123123,\n    \"observacao\": \"Dados Originais\",\n    \"ativo\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:9090/api/cliente"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
